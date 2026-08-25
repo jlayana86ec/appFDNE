@@ -1,0 +1,37 @@
+name: fedenador
+description: Aplicación oficial de FEDENADOR
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  webview_flutter: ^4.4.2
+  webview_flutter_android: ^4.12.0
+  webview_flutter_wkwebview: ^3.9.4
+  connectivity_plus: ^7.1.1
+  internet_connection_checker_plus: ^3.0.0
+  url_launcher: ^6.2.4
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4   # ← AGREGA ESTA LÍNEA
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+
+# ← ESTO VA AL FINAL, PEGADO ABAJO DE TODO
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/icono.png"
+  adaptive_icon_background: "#B8860B"
+  adaptive_icon_foreground: "assets/icono.png"
